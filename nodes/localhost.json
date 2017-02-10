@@ -76,13 +76,13 @@
     "filesystem": {
       "/dev/mapper/centos-root": {
         "kb_size": "39265556",
-        "kb_used": "1822284",
-        "kb_available": "37443272",
-        "percent_used": "5%",
+        "kb_used": "2394196",
+        "kb_available": "36871360",
+        "percent_used": "7%",
         "mount": "/",
         "total_inodes": "39284736",
-        "inodes_used": "73407",
-        "inodes_available": "39211329",
+        "inodes_used": "73529",
+        "inodes_available": "39211207",
         "inodes_percent_used": "1%",
         "fs_type": "xfs",
         "mount_options": [
@@ -161,8 +161,8 @@
       },
       "vagrant": {
         "kb_size": "243924992",
-        "kb_used": "56587328",
-        "kb_available": "187337664",
+        "kb_used": "57016288",
+        "kb_available": "186908704",
         "percent_used": "24%",
         "mount": "/vagrant",
         "total_inodes": "1000",
@@ -575,9 +575,9 @@
     },
     "memory": {
       "swap": {
-        "cached": "20kB",
+        "cached": "76kB",
         "total": "2097148kB",
-        "free": "2097036kB"
+        "free": "2096372kB"
       },
       "hugepages": {
         "total": "0",
@@ -586,23 +586,23 @@
         "surplus": "0"
       },
       "total": "1016860kB",
-      "free": "206216kB",
-      "buffers": "1812kB",
-      "cached": "474672kB",
-      "active": "335684kB",
-      "inactive": "289324kB",
-      "dirty": "16kB",
+      "free": "163960kB",
+      "buffers": "0kB",
+      "cached": "538068kB",
+      "active": "345960kB",
+      "inactive": "340564kB",
+      "dirty": "24kB",
       "writeback": "0kB",
-      "anon_pages": "148516kB",
-      "mapped": "29676kB",
-      "slab": "143428kB",
-      "slab_reclaimable": "101412kB",
-      "slab_unreclaim": "42016kB",
-      "page_tables": "4632kB",
+      "anon_pages": "148424kB",
+      "mapped": "25832kB",
+      "slab": "131356kB",
+      "slab_reclaimable": "92760kB",
+      "slab_unreclaim": "38596kB",
+      "page_tables": "4628kB",
       "nfs_unstable": "0kB",
       "bounce": "0kB",
       "commit_limit": "2605576kB",
-      "committed_as": "503504kB",
+      "committed_as": "503580kB",
       "vmalloc_total": "34359738367kB",
       "vmalloc_used": "9908kB",
       "vmalloc_chunk": "34359719420kB",
@@ -768,15 +768,15 @@
         "interfaces": {
           "lo": {
             "rx": {
-              "bytes": "1616",
-              "packets": "24",
+              "bytes": "8337",
+              "packets": "52",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
             },
             "tx": {
-              "bytes": "1616",
-              "packets": "24",
+              "bytes": "8337",
+              "packets": "52",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
@@ -786,16 +786,16 @@
           "enp0s3": {
             "tx": {
               "queuelen": "1000",
-              "bytes": "2588576",
-              "packets": "38386",
+              "bytes": "3285010",
+              "packets": "49556",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "193180285",
-              "packets": "176883",
+              "bytes": "293285902",
+              "packets": "258123",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -815,10 +815,10 @@
     "platform": "centos",
     "platform_version": "7.2.1511",
     "platform_family": "rhel",
-    "uptime_seconds": 34223,
-    "uptime": "9 hours 30 minutes 23 seconds",
-    "idletime_seconds": 33271,
-    "idletime": "9 hours 14 minutes 31 seconds",
+    "uptime_seconds": 35636,
+    "uptime": "9 hours 53 minutes 56 seconds",
+    "idletime_seconds": 34633,
+    "idletime": "9 hours 37 minutes 13 seconds",
     "virtualization": {
       "systems": {
         "vbox": "guest"
@@ -1205,6 +1205,13 @@
           "uid": 1001,
           "shell": "/bin/bash",
           "gecos": ""
+        },
+        "mongod": {
+          "dir": "/var/lib/mongo",
+          "gid": 992,
+          "uid": 995,
+          "shell": "/bin/false",
+          "gecos": "mongod"
         }
       },
       "group": {
@@ -1483,6 +1490,12 @@
           "members": [
 
           ]
+        },
+        "mongod": {
+          "gid": 992,
+          "members": [
+
+          ]
         }
       }
     },
@@ -1495,12 +1508,12 @@
       "by_device": {
         "/dev/mapper/centos-root": {
           "kb_size": "39265556",
-          "kb_used": "1822284",
-          "kb_available": "37443272",
-          "percent_used": "5%",
+          "kb_used": "2394196",
+          "kb_available": "36871360",
+          "percent_used": "7%",
           "total_inodes": "39284736",
-          "inodes_used": "73407",
-          "inodes_available": "39211329",
+          "inodes_used": "73529",
+          "inodes_available": "39211207",
           "inodes_percent_used": "1%",
           "fs_type": "xfs",
           "mount_options": [
@@ -1591,8 +1604,8 @@
         },
         "vagrant": {
           "kb_size": "243924992",
-          "kb_used": "56587328",
-          "kb_available": "187337664",
+          "kb_used": "57016288",
+          "kb_available": "186908704",
           "percent_used": "24%",
           "total_inodes": "1000",
           "inodes_used": "0",
@@ -1825,12 +1838,12 @@
       "by_mountpoint": {
         "/": {
           "kb_size": "39265556",
-          "kb_used": "1822284",
-          "kb_available": "37443272",
-          "percent_used": "5%",
+          "kb_used": "2394196",
+          "kb_available": "36871360",
+          "percent_used": "7%",
           "total_inodes": "39284736",
-          "inodes_used": "73407",
-          "inodes_available": "39211329",
+          "inodes_used": "73529",
+          "inodes_available": "39211207",
           "inodes_percent_used": "1%",
           "fs_type": "rootfs",
           "mount_options": [
@@ -1890,8 +1903,8 @@
           "kb_available": "457268",
           "percent_used": "11%",
           "total_inodes": "127107",
-          "inodes_used": "389",
-          "inodes_available": "126718",
+          "inodes_used": "390",
+          "inodes_available": "126717",
           "inodes_percent_used": "1%",
           "fs_type": "tmpfs",
           "mount_options": [
@@ -1952,8 +1965,8 @@
         },
         "/vagrant": {
           "kb_size": "243924992",
-          "kb_used": "56587328",
-          "kb_available": "187337664",
+          "kb_used": "57016288",
+          "kb_available": "186908704",
           "percent_used": "24%",
           "total_inodes": "1000",
           "inodes_used": "0",
@@ -2300,13 +2313,13 @@
         "/dev/mapper/centos-root,/": {
           "device": "/dev/mapper/centos-root",
           "kb_size": "39265556",
-          "kb_used": "1822284",
-          "kb_available": "37443272",
-          "percent_used": "5%",
+          "kb_used": "2394196",
+          "kb_available": "36871360",
+          "percent_used": "7%",
           "mount": "/",
           "total_inodes": "39284736",
-          "inodes_used": "73407",
-          "inodes_available": "39211329",
+          "inodes_used": "73529",
+          "inodes_available": "39211207",
           "inodes_percent_used": "1%",
           "fs_type": "xfs",
           "mount_options": [
@@ -2367,8 +2380,8 @@
           "percent_used": "11%",
           "mount": "/run",
           "total_inodes": "127107",
-          "inodes_used": "389",
-          "inodes_available": "126718",
+          "inodes_used": "390",
+          "inodes_available": "126717",
           "inodes_percent_used": "1%",
           "fs_type": "tmpfs",
           "mount_options": [
@@ -2425,8 +2438,8 @@
         "vagrant,/vagrant": {
           "device": "vagrant",
           "kb_size": "243924992",
-          "kb_used": "56587328",
-          "kb_available": "187337664",
+          "kb_used": "57016288",
+          "kb_available": "186908704",
           "percent_used": "24%",
           "mount": "/vagrant",
           "total_inodes": "1000",
@@ -2848,7 +2861,7 @@
         ]
       }
     },
-    "ohai_time": 1486755348.336134,
+    "ohai_time": 1486756761.8035347,
     "packages": {
       "dracut": {
         "epoch": "0",
@@ -3153,9 +3166,9 @@
       },
       "gpg-pubkey": {
         "epoch": "0",
-        "version": "f4a80eb5",
-        "release": "53a7ff4b",
-        "installdate": "1486596118",
+        "version": "a15703c6",
+        "release": "5694361b",
+        "installdate": "1486755352",
         "arch": "(none)"
       },
       "perl-Time-Local": {
@@ -3438,12 +3451,26 @@
         "installdate": "1480625517",
         "arch": "x86_64"
       },
+      "mongodb-org-server": {
+        "epoch": "0",
+        "version": "3.4.2",
+        "release": "1.el7",
+        "installdate": "1486755361",
+        "arch": "x86_64"
+      },
       "python-slip": {
         "epoch": "0",
         "version": "0.4.0",
         "release": "2.el7",
         "installdate": "1480625519",
         "arch": "noarch"
+      },
+      "mongodb-org": {
+        "epoch": "0",
+        "version": "3.4.2",
+        "release": "1.el7",
+        "installdate": "1486755363",
+        "arch": "x86_64"
       },
       "yum-metadata-parser": {
         "epoch": "0",
@@ -4642,12 +4669,26 @@
         "installdate": "1480625519",
         "arch": "x86_64"
       },
+      "mongodb-org-shell": {
+        "epoch": "0",
+        "version": "3.4.2",
+        "release": "1.el7",
+        "installdate": "1486755361",
+        "arch": "x86_64"
+      },
       "python-slip-dbus": {
         "epoch": "0",
         "version": "0.4.0",
         "release": "2.el7",
         "installdate": "1480625519",
         "arch": "noarch"
+      },
+      "mongodb-org-mongos": {
+        "epoch": "0",
+        "version": "3.4.2",
+        "release": "1.el7",
+        "installdate": "1486755363",
+        "arch": "x86_64"
       },
       "python-perf": {
         "epoch": "0",
@@ -5620,6 +5661,13 @@
         "version": "2.23.52.0.1",
         "release": "55.el7",
         "installdate": "1480625519",
+        "arch": "x86_64"
+      },
+      "mongodb-org-tools": {
+        "epoch": "0",
+        "version": "3.4.2",
+        "release": "1.el7",
+        "installdate": "1486755363",
         "arch": "x86_64"
       },
       "plymouth-core-libs": {

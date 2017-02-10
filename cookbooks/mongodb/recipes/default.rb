@@ -9,3 +9,11 @@ template '/etc/yum.repos.d/mongodb-org-2.6.repo' do
 end
 
 package 'mongodb-org'
+
+# service 'mogod' do
+#  action [:start]
+# end
+
+execute 'service mongod start'
+
+execute 'chkconfig mongod on'
